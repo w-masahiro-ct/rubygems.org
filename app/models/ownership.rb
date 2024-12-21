@@ -53,10 +53,6 @@ class Ownership < ApplicationRecord
     update_notifier(to_enable_owner, to_disable_owner, "owner_notifier")
   end
 
-  def self.update_ownership_request_notifier(to_enable_ownership_request, to_disable_ownership_request)
-    update_notifier(to_enable_ownership_request, to_disable_ownership_request, "ownership_request_notifier")
-  end
-
   def valid_confirmation_token?
     token_expires_at > Time.zone.now
   end
