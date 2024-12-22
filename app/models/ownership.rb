@@ -1,4 +1,6 @@
 class Ownership < ApplicationRecord
+  self.ignored_columns = %w[ownership_request_notifier]
+
   belongs_to :rubygem
   belongs_to :user
   belongs_to :authorizer, class_name: "User"
