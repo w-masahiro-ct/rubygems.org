@@ -5,8 +5,8 @@ ruby file: ".ruby-version"
 gem "rails", "~> 8.0.1"
 gem "rails-i18n", "~> 8.0.1"
 
-gem "aws-sdk-s3", "~> 1.176"
-gem "aws-sdk-sqs", "~> 1.89"
+gem "aws-sdk-s3", "~> 1.177"
+gem "aws-sdk-sqs", "~> 1.90"
 gem "bootsnap", "~> 1.18"
 gem "clearance", "~> 2.9"
 gem "dalli", "~> 3.2"
@@ -58,7 +58,7 @@ gem "phlex-rails", "~> 1.2"
 gem "discard", "~> 1.4"
 gem "user_agent_parser", "~> 2.18"
 gem "pghero", "~> 3.6"
-gem "faraday-multipart", "~> 1.0"
+gem "faraday-multipart", "~> 1.1"
 gem "timescaledb", "~> 0.3"
 gem "sigstore", "~> 0.2.1"
 
@@ -88,13 +88,13 @@ gem "observer", "~> 0.1.2" # launchdarkly-server-sdk-8.0.0
 
 # Assets
 gem "propshaft", "~> 1.1.0"
-gem "importmap-rails", "~> 2.0"
+gem "importmap-rails", "~> 2.1"
 gem "stimulus-rails", "~> 1.3" # this adds stimulus-loading.js so it must be available at runtime
 gem "local_time", "~> 3.0"
 gem "better_html", "~> 2.1"
 
 group :assets, :development do
-  gem "tailwindcss-rails", "~> 3.0"
+  gem "tailwindcss-rails", "~> 3.1"
 end
 
 group :development, :test do
@@ -104,7 +104,7 @@ group :development, :test do
   gem "dotenv-rails", "~> 3.1"
   gem "lookbook", "~> 2.3"
 
-  gem "brakeman", "~> 6.2", require: false
+  gem "brakeman", "~> 7.0", require: false
 
   # used to find n+1 queries
   gem "prosopite", "~> 1.4"
@@ -129,7 +129,7 @@ group :development do
 end
 
 group :test do
-  gem "datadog-ci", "~> 1.10"
+  gem "datadog-ci", "~> 1.11"
   gem "minitest", "~> 5.25", require: false
   gem "minitest-retry", "~> 0.2.3"
   gem "capybara", "~> 3.40"
